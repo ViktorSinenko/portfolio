@@ -37,6 +37,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: "DM Sans", sans-serif;
 }
 
 input,
@@ -81,4 +82,58 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav {
+  padding: 20px 0;
+  border-bottom: 1px solid #26292d;
+  background: #171718;
+  color: #ffffff;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 20px;
+}
+.nav-row a {
+  color: #ffffff;
+}
+.nav-row .logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav-row .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.nav-row .nav-list .nav-list__link--active {
+  position: relative;
+}
+.nav-row .nav-list .nav-list__link--active::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #5C62EC;
+  left: 0;
+  top: 100%;
 }/*# sourceMappingURL=style.css.map */
