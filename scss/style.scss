@@ -1,13 +1,19 @@
 @import"reset";
 @import"vars";
 
+.body-dark-mode {
+   background: $black-border;
+   color: $white;
+
+}
+
+
+
 .container {
    padding: 0 15px;
    margin: 0 auto;
    max-width: 1200px;
 }
-
-;
 
 //Nav
 
@@ -256,10 +262,13 @@
    column-gap: 10px;
    align-items: center;
    height: 48px;
-   border: 1px solid $black-text;
+
+   background: $white;
+   border: 1px solid $text-color;
    border-radius: 5px;
    padding: 12px 20px;
-   color: $black-text;
+   color: $text-color;
+
 
    &:hover {
       opacity: .8;
@@ -361,7 +370,8 @@
          padding: 0px 40px;
          margin: auto;
       }
-      & .nav-list{
+
+      & .nav-list {
          margin: auto;
       }
    }
